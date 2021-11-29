@@ -10,11 +10,10 @@ const ListItem = ({item, deleteItem}) => {
                 <Text style={styles.listItemText}>
                     {item.text}
                 </Text>
-                <Icon 
-                   name="remove" 
-                   size={20} 
-                   color="firebrick"
-                   onPress={() => deleteItem(item.id)}
+                <Icon  
+                    name="remove" size={20} color="firebrick" 
+                    onPress={() => deleteItem(item.id)}
+                    style= {{marginRight: 10, fontSize:24}}
                 />   
             </View>
         </TouchableOpacity>
@@ -24,10 +23,10 @@ const ListItem = ({item, deleteItem}) => {
 const styles = StyleSheet.create({
     listItem: {
         padding: 15,
-        backgroundColor:'#f2f2f2',
-        borderBottomWidth: 3,
-        borderBottomColor: "#e3e3e3",
-        borderColor: '#eee'
+        backgroundColor:'lightblue',
+        marginBottom: 5,
+        marginHorizontal: 10,
+
     },
 
     listItemView: {
@@ -38,7 +37,8 @@ const styles = StyleSheet.create({
 
     listItemText: {
         fontSize: 20, 
-        fontWeight: "bold"
+        fontWeight: "bold",
+        textTransform: 'capitalize'
     }
 
 })

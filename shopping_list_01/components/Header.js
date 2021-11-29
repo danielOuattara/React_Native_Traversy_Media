@@ -1,7 +1,6 @@
 
-
 import React from "react";
-import {View, Text, Image, StyleSheet} from "react-native";
+import {View, Text, StyleSheet} from "react-native";
 
 
 const Header = (props) => {
@@ -21,7 +20,7 @@ const styles = StyleSheet.create({
 
   text: {
       color: "white",
-      fontSize: 23,
+      fontSize: 24,
       textAlign: "center",
   }
 })
